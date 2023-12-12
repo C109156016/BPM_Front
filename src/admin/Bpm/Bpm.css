@@ -1,0 +1,24 @@
+.table-margin {
+    margin-top: 50px;
+}
+
+.space {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.column {
+    display: flex;
+    flex-direction: column;
+    margin: 20px 40px;
+}
+
+.row p {
+    padding-left: calc((100% - 650px)/3);
+}
+
+.task-status-form {
+    margin: 40px 0px;
+}

@@ -1,0 +1,57 @@
+.flex {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    height: 100vh;
+}
+
+header {
+    width: 100%;
+    height: 70px;
+    background-color: #4065B8;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    position: fixed;
+    z-index: 20;
+}
+
+header .navbar {
+    width: 85%;
+    height: 70px;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+header img {
+    width: 70px;
+    height: 70px;
+}
+
+header .space {
+    padding-right: 15px;
+}
+
+header .icon {
+    color: #fff;
+}
+
+header .username {
+    color: #fff;
+}
+
+.sidebar {
+    height: 200vh;
+    background-color: #F5F5F5;
+    margin-top: 70px;
+}
+
+.sidebar_btn {
+    width: 80px;
+    height: 70px;
+    background-color: #4065B8;
+    margin-right: 20px;
+}

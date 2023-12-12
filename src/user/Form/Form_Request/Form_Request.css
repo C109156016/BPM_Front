@@ -1,0 +1,23 @@
+form{
+    justify-content: flex-start;
+    margin:20px 0 !important;
+}
+.row{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin: 20px 0px;
+}
+
+.row p{
+    padding-left: calc((100% - 850px)/4);
+}
+
+.task-status-form{
+    margin: 40px 0px;
+}
+
+.form_layout_r{
+    margin-top: 280px !important; 
+}

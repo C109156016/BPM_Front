@@ -1,0 +1,62 @@
+.form {
+    display: flex;
+    flex-direction: column;
+    width: 600px;
+    background-color: #fff;
+    border-radius: 10px;
+    padding: 0 120px !important;
+    justify-content:flex-start !important;
+}
+
+.table-margin {
+    margin-top: 50px;
+}
+
+.row {
+    display: flex;
+    flex-direction: row;
+    margin: 20px 0px;
+}
+
+.row p {
+    padding-left: calc((100% - 650px)/3);
+}
+
+.task-status-form {
+    margin: 40px 0px;
+}
+
+.chatroom_layout{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100%;
+}
+
+.chatroom{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.msg_system{
+    display: flex;
+    flex-direction: row;
+    justify-content:space-around;
+    width: 350px;
+    margin-top: 25px ;
+}
+
+.msg_user{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    width: 350px;
+    margin-top: 25px ;
+}
+
+.align_center{
+    display: flex;
+    flex-direction: column;
+}

@@ -1,0 +1,27 @@
+.table-margin {
+    margin-top: 50px;
+}
+
+.row {
+    display: flex;
+    flex-direction: row;
+    margin: 20px 0px;
+}
+
+.row p {
+    padding-left: calc((100% - 650px)/3);
+}
+
+.task-status-form {
+    margin: 40px 0px;
+}
+
+.form {
+    display: flex;
+    flex-direction: column;
+    width: 600px;
+    background-color: #fff;
+    border-radius: 10px;
+    padding: 0 120px !important;
+    justify-content:flex-start !important;
+}

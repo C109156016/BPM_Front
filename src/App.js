@@ -1,25 +1,35 @@
-import logo from './logo.svg';
+import React, { Component, useEffect, useState } from 'react'
+import { Outlet } from "react-router-dom";
+import Top from './component/Top_user/Top';
+import Login from './login/Login';
 import './App.css';
+import Cookies from 'js-cookie';
 
 function App() {
+  const [isLoggedIn, setIsLoggedIn] = useState(false);
+
+  useEffect(() => {
+    const comEmployeeRoleFromCookie = Cookies.get('comEmployeeRole');
+    if (comEmployeeRoleFromCookie != null && (comEmployeeRoleFromCookie === '0' || comEmployeeRoleFromCookie === '1')) {
+      // console.log("isLogin");
+      setIsLoggedIn(true);
+    } else {
+      setIsLoggedIn(false);
+    }
+  }, [Cookies.get('comEmployeeRole')]);
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+    isLoggedIn ? (
+      <div className="app-container">
+        <Top />
+        <div className="content-container">
+          <Outlet />
+        </div>
+      </div>
+    ) : (
+      <Login />
+    )
+  )
 }
 
 export default App;
